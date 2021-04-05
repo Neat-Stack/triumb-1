@@ -1,0 +1,33 @@
+.monthly-page{
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(217, 241, 248);
+}
+
+.monthly-deals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.monthly-page > h1, .monthly-page>p{
+    margin-bottom: 20px;
+}
+
+
+.car-img{
+    height: 300px;
+    object-fit: contain;
+}
+.deal{
+    margin: 5px;
+}
+
+.car-name{
+    color: rgb(134, 133, 133);
+}
+
+.deal>h3{
+    margin-bottom: 5px;
+}

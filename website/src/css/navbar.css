@@ -6,8 +6,8 @@ body{
 .navbar{
     height: 4rem;
     width: 100vw;
-    background-color: #99ddee;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(217, 241, 248);
+    box-shadow: 0 3px 20px rgba(116, 20, 20, 0.2);
     display: flex;
     
     z-index: 100;
@@ -17,12 +17,14 @@ body{
     font-weight: 300;
     color: rgb(27, 27, 27);
   
+   
+  
 }
 
 /*Styling logo*/
 .logo{
    object-fit: contain;
-   transform: scale(1);
+   transform: scale(2);
   
 }
 .logo_div{

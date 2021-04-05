@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Landing from './components/Landing'
 import {BrowserRouter as Router,Route} from 'react-router-dom'
 import Account from './components/Account';
+import Taskbar from './components/Taskbar'
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Account/>
           {/* contact us */}
           <Contact/>
+          {/* Taskbar */}
+          <Taskbar/>
           {/* footer */}
           <Footer/>
         </div>

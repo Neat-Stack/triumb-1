@@ -1,0 +1,54 @@
+.yearly-page{
+    background-color: rgb(217, 241, 248);
+    background-image: url('../images/shiny1.jpg');
+    background-size: 70rem;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    
+    align-items: center;
+}
+
+.car-img > img{
+    height: 300px;
+}
+
+.yearly-page{
+    display: flex;
+    
+}
+
+.yearly-deals{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 60%;
+}
+
+.names{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name{
+    cursor: pointer;
+    margin: 5px;
+}
+.name:hover{
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+.get-deal{
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+}

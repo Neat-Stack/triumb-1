@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/landing.css'
+import Slides from './Slides'
 
 function Landing() {
     return (
@@ -12,7 +13,7 @@ function Landing() {
                 <button className='explore-btn'>Explore Now</button>
            </div>
            <div className="slideshow">
-
+            <Slides/>
            </div>
         </div>
     )

@@ -1,0 +1,9 @@
+.taskbar{
+    display: flex;
+    background-color: rgb(70, 48, 48);
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

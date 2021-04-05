@@ -10,7 +10,7 @@ function CarwashLiquid() {
           </h1>
           <div className="container-carwash">
               <div className="text-container-white">
-                  <p>
+                  <p className='info'>
                   Triumb cares for the
             environment and uses least
             amount of water. We have

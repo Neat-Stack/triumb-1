@@ -1,0 +1,14 @@
+.infotech{
+    height: 300px;
+}
+
+.footer{
+    background-color: black;
+    
+    padding:30px;
+}
+
+footer > p{
+    color: white;
+    
+}

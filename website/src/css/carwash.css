@@ -1,7 +1,8 @@
 .carwash{
-    height: 100vh;
+    
     background-color: rgb(217, 241, 248);
     padding: 20px;
+    padding-bottom: 100px;
 }
 
 .carwash-heading{
@@ -20,7 +21,7 @@
     width: 250px;
     padding: 10px;
 }
-p{
+.info{
     line-height: 40px;
 }
 .chem{
