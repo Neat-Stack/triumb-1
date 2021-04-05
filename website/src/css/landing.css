@@ -1,0 +1,27 @@
+.landing-page{
+    height: 100vh;
+    background-color: rgb(217, 241, 248);
+    display: flex;
+    align-items: center;
+    
+}
+.text-container{
+    padding: 30px;
+}
+.tagline{
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    letter-spacing: 0px;
+    line-height: 1em;
+    font-family: Arial;
+    
+}
+
+.explore-btn{
+    margin-top: 40px;
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
