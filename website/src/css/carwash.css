@@ -6,23 +6,33 @@
 }
 
 .carwash-heading{
-    color: rgb(0, 0, 0);
-    font-size: 4em;
-    letter-spacing: 0px;
-    line-height: 1em;
-    font-family: Arial;
+    
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Source Serif Pro';
+    font-size: 72px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-top: 40px;
 }
 
 .text-container-white{
     background-color: white;
-    height: 250px;
-    width: 250px;
-    padding: 10px;
+    height: 336px;
+    width: 372px;
+    padding: 24px;
+    padding-right: 33px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
 }
 .info{
-    line-height: 40px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(105, 105, 105, 1);
+    line-height: 48px;
 }
 .chem{
     height: 400px;

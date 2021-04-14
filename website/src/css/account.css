@@ -1,10 +1,10 @@
 .create-account{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 85px;
+    padding-bottom: 85px;
     background-color: rgb(135, 86, 168);
     display: flex;
     justify-content: center;
-    color: white;
+    color: whitesmoke;
 }
 .create-container{
  display: flex;
@@ -15,18 +15,33 @@
 }
 
 .create-account-text{
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    line-height: 24px;  
+    height: 48px;
+    width: 453px;
+    margin-top: 10px;
+    margin-bottom: 33px;
 }
 .join{
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 53px;
+    width: 117px;
     font-weight: 700;
     background-color: white;
     outline: none;
     border: none;
     font-size: large;
     
+}
+
+.create-heading{
+    font-family: 'Source Serif Pro';
+font-size: 48px;
+font-weight: 600;
+color: rgba(255, 255, 255, 1);
+text-align: center;
+height: 66px;
+width: 618px;
 }

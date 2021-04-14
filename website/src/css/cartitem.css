@@ -1,0 +1,17 @@
+.cartItem{
+    width: 300px;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rm-btn{
+    height: 50px;
+    width: 80px;
+    background-color: red;
+    color: white;
+    
+}

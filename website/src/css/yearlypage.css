@@ -1,14 +1,26 @@
 .yearly-page{
     background-color: rgb(217, 241, 248);
     background-image: url('../images/shiny1.jpg');
-    background-size: 70rem;
+    background-size: 80rem;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 800px;
     display: flex;
-    
     align-items: center;
+    background-position: center;
+    background-position: left;
+}
+.yearly-deals>p{
+    font-size: 24px;
+    color: rgba(105, 105, 105, 1);
+    line-height: 35px;
+    font-family: 'Source Sans Pro';
 }
 
+.yearly-deals>h1{
+    font-family: 'Source Serif Pro';
+    font-size: 48px;
+    font-weight: 600;
+}
 .car-img > img{
     height: 300px;
 }
@@ -19,15 +31,16 @@
 }
 
 .yearly-deals{
-    height: 400px;
-    width: 400px;
+    height: 577px;
+    width: 540px;
     background-color: white;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: relative;
-    left: 60%;
+    position: absolute;
+    left: 830px;
+   
 }
 
 .names{
@@ -37,18 +50,47 @@
 }
 .name{
     cursor: pointer;
-    margin: 5px;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    height: 46px;
+    width: 150px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    background-color: grey;
+    border: none;
 }
 .name:hover{
-    transform: scale(1.1);
-    transition: 200ms ease-in-out;
+   background-color: black;
 }
 .get-deal{
-    width: 150px;
-    height: 40px;
+    height: 52px;
+    width: 217px;
     font-size: large;
-    background: black;
+    background-color: rgba(16, 8, 0, 1);
     color: white;
     outline: none;
     border: none;
+}
+
+.get-deal:hover{
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .yearly-deals{
+        position: static;
+    }
+    .yearly-page{
+        justify-content: center;
+    }
+  }
+
+.price{
+    font-family: 'Source Sans Pro';
+font-size: 48px;
+font-weight: 600;
+color: rgba(16, 8, 0, 1);
+line-height: 60px;
 }

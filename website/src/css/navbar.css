@@ -6,7 +6,7 @@ body{
 .navbar{
     height: 4rem;
     width: 100vw;
-    background-color: rgb(217, 241, 248);
+    
     box-shadow: 0 3px 20px rgba(116, 20, 20, 0.2);
     display: flex;
     
@@ -17,10 +17,19 @@ body{
     font-weight: 300;
     color: rgb(27, 27, 27);
   
-   
-  
+   position: fixed;
+  top: 0%;
+  transition: 200ms ease-in-out;
 }
 
+.nav_black{
+    background-color: black;
+    color: rgb(41, 182, 147);
+}
+
+.a-white{
+    color: white;
+}
 /*Styling logo*/
 .logo{
    object-fit: contain;
@@ -45,6 +54,7 @@ body{
     
 }
 .nav-links li a{
+    font-weight: bold;
     text-decoration: none;
     margin: 0 0.7vw;
     color: rgb(122, 122, 122);
@@ -110,6 +120,7 @@ body{
     background: #f2f5f7;
     margin: 5px;
     transition: all 0.3s ease;
+    
 }
 .hamburger{
     display: none;
@@ -119,14 +130,14 @@ body{
 @media screen and (max-width: 800px){
     nav{
         position: fixed;
-        z-index: 3;
+        z-index: 3000;
     }
     .hamburger{
         display:block;
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: 5%;
+        top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
         transition: all 0.7s ease;
@@ -187,4 +198,19 @@ body{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.cart-logo{
+    display: flex;
+    align-items: center;
+}
+
+.login-link{
+    text-align: center;
+}
+
+.header_option{
+    margin-right: 15px;
+   display: flex;
+    flex-direction: column;
 }

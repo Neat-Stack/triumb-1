@@ -10,14 +10,14 @@ import '../css/slide.css'
 
 function Slides() {
     return (
-        <div>
+        <div id='slide'>
         <Carousel 
         autoPlay="true"
         infiniteLoop="true"
-        interval="2000"
-        width="600px"
+        interval="3000"
+        width="100vw"
         emulateTouch="true"
-       
+        transitionTime="1000"
        showThumbs={false}
         >
                 <div>

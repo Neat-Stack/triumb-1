@@ -1,10 +1,20 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import '../css/navbar.css'
 import {Link} from 'react-router-dom'
 import logo from '../images/triumb logo T.png'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import {useStateValue} from '../StateProvider'
+import {auth} from '../firebase'
 
 function Navbar() {
 
+    const[{cart,user},dispatch] = useStateValue()
+
+    const handleAuthentication = () => {
+        if(user){
+            auth.signOut()
+        }
+    }
     
     function click(){  // DO NOT TOUCH THIS FUNCTION WITHOUT AMAN
         const hamburger = document.querySelector(".hamburger");
@@ -33,8 +43,26 @@ function Navbar() {
          });
     }
 
+    //change color on scroll
+    const [show, setshow] = useState(false)
+   
+    useEffect(() => {
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY > 100){
+                setshow(true);
+            } else setshow(false);
+        })
+        return()=>{
+            window.removeEventListener("scroll",()=>{
+                if(window.scrollY > 100){
+                    setshow(true);
+                } else setshow(false);
+            });
+        };
+    }, [])
+
     return (
-        <div className='navbar'>
+        <div className={`navbar ${show && "nav_black"} `}>
 
         <div className='logo_div'>
             <img height="50px" className='logo'src={logo} alt='img'/>
@@ -46,15 +74,24 @@ function Navbar() {
             <div className="line3"></div>
         </div>
         <ul className="nav-links" onClick={clicked}>
-            <li><a href="#home">PRODUCTS</a></li>
-            <li><a href="#about">OUR STORY</a></li>
-            <li><a href="#faq">CONTACT US</a></li>
-            <li><a href="#blogs">YOUR TRIUMB</a></li>
+            <li><a  className={show && "a-white"} href="#productid">PRODUCTS</a></li>
+            <li><a  className={show && "a-white"} href="#storyid">OUR STORY</a></li>
+            <li><a  className={show && "a-white"}href="#contactid">CONTACT US</a></li>
+            <li><div className="a-white login-link" >
+             <Link to={!user && "/login"}>
+             <div onClick={handleAuthentication}className='header_option'>
+                <span className='line_one'>{user?user.email:'Guest'}</span>
+                <span className='line_two'>{user?'Logout':'Sign in'}</span>
+                </div>
+               </Link> 
+            </div></li>
             
-        
-          <li><Link to='/join'>
-          <button className="join-button">Cart Icon</button>
-          </Link></li>
+            <Link to='/cart'>
+          <li className='cart-logo'>
+              <ShoppingCartIcon/>
+              {cart.length}
+          </li>
+           </Link>
         </ul>
     </div>
     )

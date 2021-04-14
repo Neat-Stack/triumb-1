@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './App.css';
 import Navbar from './components/Navbar'
 import Contact from './components/Contact'
@@ -10,8 +10,36 @@ import Landing from './components/Landing'
 import {BrowserRouter as Router,Route} from 'react-router-dom'
 import Account from './components/Account';
 import Taskbar from './components/Taskbar'
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
+import Login from './components/Login';
+import {auth} from "./firebase"
+import {useStateValue} from './StateProvider'
 
 function App() {
+  const[{user},dispatch] = useStateValue()
+  
+  useEffect(() => {
+    auth.onAuthStateChanged(authUser=>{
+      console.log("user is >>>",authUser)
+
+      if(authUser){
+        // the user just logged in / the user was logged in
+
+        dispatch({
+          type:'SET_USER',
+          user: authUser
+        })
+      }else{
+        //user logged out
+        dispatch({
+          type:'SET_USER',
+          user: null
+        })
+      }
+    })
+  }, [])
+  
   return (
        <Router>
          <Route exact path='/'>
@@ -21,22 +49,33 @@ function App() {
           {/* Landing */}
           <Landing/>
           {/* Carwash Liquid */}
+          <span id="storyid"/>
           <CarwashLiquid/>
           {/* yearly deals */}
+          <span id="productid"/>
           <YearlyDeals/>
           {/* monthly package */}
           <MonthlyDeals/>
           {/* create account */}
+          <span id="login"/>
           <Account/>
           {/* contact us */}
+          <span id="contactid"/>
           <Contact/>
-          {/* Taskbar */}
-          <Taskbar/>
+          
           {/* footer */}
           <Footer/>
         </div>
          </Route>
-    
+        <Route exact path="/cart">
+          <Cart/>
+        </Route>
+        <Route exact path ="/cart/checkout">
+          <Checkout/>
+        </Route>
+        <Route exact path="/login">
+          <Login/>
+        </Route>
     </Router>
   );
 }

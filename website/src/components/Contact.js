@@ -10,8 +10,10 @@ function Contact() {
                         Contact Us
                     </h1>
                     <div className="contact-links">
-                        <button>+91 96537 00887</button>
-                        <button>support@triumb.in</button>
+                        <button className='contact-links-btn'>+91 96537 00887</button>
+                        <a href="mailto:support@triumb.in" >
+                        <button className='contact-links-btn mail' >support@triumb.in</button> 
+                        </a>
                     </div>
                 </div>
                 <div className="contact-text">
