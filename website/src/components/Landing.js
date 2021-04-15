@@ -9,10 +9,13 @@ function Landing() {
                 <pre >
                     <h1 className='tagline'>A Moment</h1>
                     <h1 className='tagline'>of Shine</h1>
-                </pre>
-                <a href="#storyid">
-                <button className='explore-btn'>Explore Now</button>
+                    <br></br>
+                    <br></br>
+                    <a href="#storyid" className='explore-btn'>
+                Explore Now
                 </a>
+                </pre>
+                
                 
            </div>
            <div className="slideshow">

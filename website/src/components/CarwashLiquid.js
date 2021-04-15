@@ -5,9 +5,11 @@ import chem from '../images/chem.jpg'
 function CarwashLiquid() {
     return (
         <div className='carwash'>
+             <span id="Bg">Triumb</span>
           <h1 className="carwash-heading">
               Special Carwash Liquid
           </h1>
+   
           <div className="container-carwash">
               <div className="text-container-white">
                   <p className='info'>
@@ -20,12 +22,13 @@ function CarwashLiquid() {
                   </p>
               
               </div>
+             
               <div className="image">
                   <img  className='chem' src={chem} alt=""/>
               </div>
           </div>
         </div>
-    )
+    ) 
 }
 
 export default CarwashLiquid

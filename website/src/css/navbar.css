@@ -1,30 +1,28 @@
 
 
 body{
+    font-family: Nexa;
     overflow-x: hidden;
 }
 .navbar{
+    padding: 0.4rem;
     height: 4rem;
     width: 100vw;
-    
-    box-shadow: 0 3px 20px rgba(116, 20, 20, 0.2);
     display: flex;
-    
     z-index: 100;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Nexa";
     letter-spacing: 1px;
     font-weight: 300;
     color: rgb(27, 27, 27);
-  
-   position: fixed;
-  top: 0%;
-  transition: 200ms ease-in-out;
+    position: fixed;
+    top: 0%;
+    transition: 200ms ease-in-out;
 }
 
 .nav_black{
-    background-color: black;
-    color: rgb(41, 182, 147);
+    background-color: rgba(0, 0, 0, 0.705);
+    color: rgb(233, 233, 233);
 }
 
 .a-white{
@@ -34,12 +32,15 @@ body{
 .logo{
    object-fit: contain;
    transform: scale(2);
+   padding-left: 0.2rem;
+   
   
 }
 .logo_div{
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    padding-left: 2rem;
+   
 }
 
 /*Styling Links*/
@@ -47,22 +48,31 @@ body{
     display: flex;
     list-style: none; 
     width: 88vw;
-    padding: 0 0.7vw;
-    justify-content: space-evenly;
+    margin-left: 8rem;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
     align-items: center;
     text-transform: uppercase;
+    text-align: right;
     
 }
+
+
 .nav-links li a{
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 0.7vw;
-    color: rgb(122, 122, 122);
+/* font-family: Source Sans Pro; */
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+padding: 0.5rem 1rem 0.5rem 1rem;
+text-transform: uppercase;
+text-decoration: none;
+color: #696969;
 }
 .nav-links li a:hover {
-    color: #61DAFB;
+    color: rgb(230, 230, 230);
 }
 .nav-links li {
+    margin: 28px;
     position: relative;
 }
 .nav-links li a::after {
@@ -70,7 +80,7 @@ body{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #61DAFB;
+    background-color: #c7c7c7;
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 3% 0 0 10%;
@@ -78,6 +88,7 @@ body{
 .nav-links li a:hover::after{
     width: 80%;
 }
+
 
 /*Styling Buttons*/
 .login-button{
@@ -98,8 +109,8 @@ body{
 }
 .join-button{
     color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
+    background-color: #c7c7c7;
+    border: 1.5px solid #c7c7c7;
     border-radius: 2em;
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
@@ -200,9 +211,10 @@ body{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-.cart-logo{
-    display: flex;
-    align-items: center;
+li .cart-logo{
+    list-style: none;
+    text-align: right;
+    margin-left: auto;
 }
 
 .login-link{

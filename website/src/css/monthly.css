@@ -1,20 +1,33 @@
 .monthly-page{
+    position: relative;
+    z-index: 3;
     padding: 30px;
     text-align: center;
-    background-color: rgb(217, 241, 248);
+    background-color: #DFEAF4
 }
 
+
 .monthly-deals{
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px;
 }
 
+
 .deal>p{
     cursor: pointer;
 }
-
+#best{
+    position: absolute;
+    font-size: 500px;
+    top: 30.5%;
+    left: -22%;
+    color: #f6f6f6;
+    z-index: 0;
+}
 
 .car-img{
     height: 339px;
@@ -58,9 +71,22 @@ margin-bottom: 50px;
     padding-right: 121px;
     padding-left: 121px;
 }
-.arrow{
-    display: flex;
-    align-items: center;
-    font-size: larger;
-    transform: scale(2);
+
+button{
+    height: 52px;
+    width: 217px;
+    font-size: large;
+    background-color: rgba(16, 8, 0, 1);
+    color: white;
+    outline: none;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom:1rem ;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    transition: 200ms ease-in-out;
 }

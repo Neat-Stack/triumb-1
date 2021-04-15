@@ -1,7 +1,7 @@
 .create-account{
     padding-top: 85px;
     padding-bottom: 85px;
-    background-color: rgb(135, 86, 168);
+    background-image: url("../images/Frame\ 40.png");
     display: flex;
     justify-content: center;
     color: whitesmoke;
@@ -16,10 +16,10 @@
 
 .create-account-text{
     font-family: 'Source Sans Pro';
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(255, 255, 255, 1);
     text-align: center;
-    line-height: 24px;  
+    line-height: 21px;  
     height: 48px;
     width: 453px;
     margin-top: 10px;
@@ -33,12 +33,18 @@
     outline: none;
     border: none;
     font-size: large;
-    
+    color:#000 ;
+}
+.join:hover{
+    background-color: transparent;
+    border: 2px solid#fff;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 .create-heading{
-    font-family: 'Source Serif Pro';
-font-size: 48px;
+font-family: 'Source Serif Pro';
+font-size: 36px;
 font-weight: 600;
 color: rgba(255, 255, 255, 1);
 text-align: center;

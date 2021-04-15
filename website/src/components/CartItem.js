@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/cartitem.css'
 import {useStateValue} from '../StateProvider'
+import shiny3 from '../images/shiny3.jpg'
+import DeleteIcon from '@material-ui/icons/Delete';
 
 function CartItem({id,carType,price,subscription}) {
     const[{cart},dispatch]= useStateValue()
@@ -15,11 +17,12 @@ function CartItem({id,carType,price,subscription}) {
     return (
         <div className='cartItem'>
             <div className="item-content">
-            <h2>Type of car: {carType}</h2>
-            <h2>Package: {subscription}</h2>
-            <h2>Amount: {price}</h2>
+        <img className="item-image" src={shiny3}></img>
+            <h2>{carType}</h2>
+            <p> {subscription} Package</p>
+            <a onClick={removefromcart} className=' item-right tab rm-btn'><DeleteIcon/></a>
+            <h2 className="price tab" >{price}</h2>
             </div>
-            <button onClick={removefromcart} className='rm-btn'>Remove</button>
         </div>
     )
 }

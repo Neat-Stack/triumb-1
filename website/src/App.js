@@ -62,7 +62,6 @@ function App() {
           {/* contact us */}
           <span id="contactid"/>
           <Contact/>
-          
           {/* footer */}
           <Footer/>
         </div>

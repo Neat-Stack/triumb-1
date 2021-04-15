@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(217, 241, 248);
+    background-color: #DFEAF4;
     padding: 128px;
     
 }
@@ -18,7 +18,7 @@
 .contact-us{
     margin-bottom: 16px;
     font-family: 'Source Serif Pro';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
 }
 
@@ -48,8 +48,10 @@ width: 172px;
 
 
 .contact-text > p{
-    font-size: 30px;
+    font-family: "Source Sans Pro";
+    font-size: 36px;
     color: rgb(97, 97, 97);
+    line-height: 61px;
 }
 
 .contact-us{
