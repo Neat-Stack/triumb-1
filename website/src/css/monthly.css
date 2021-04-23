@@ -1,9 +1,82 @@
+/* .monthly-page{
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(217, 241, 248);
+}
+
+.monthly-deals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.deal>a{
+    text-decoration: none;
+    color: black;
+}
+.deal>p{
+    cursor: pointer;
+}
+
+
+.car-img{
+    height: 339px;
+    object-fit: contain;
+}
+.deal{
+    margin: 5px;
+}
+
+.car-name{
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(132, 132, 132, 1);
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.deal>h3{
+    margin-bottom: 10px;
+}
+
+.monthly-headings>h1{
+    font-family: 'Source Serif Pro';
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.monthly-headings>p{
+    font-family: 'Source Sans Pro';
+font-size: 24px;
+font-weight: 300;
+color: rgba(105, 105, 105, 1);
+line-height: 35px;
+margin-bottom: 50px;
+}
+
+.monthly-heading-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 121px;
+    padding-left: 121px;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    transform: scale(2);
+} */
+
 .monthly-page{
     position: relative;
     z-index: 3;
     padding: 30px;
+    padding-bottom: 40px;
+    padding-top:40px;
     text-align: center;
-    background-color: #DFEAF4
+    background-color: #DFEAF4;
+  
 }
 
 
@@ -52,17 +125,17 @@
 
 .monthly-headings>h1{
     font-family: 'Source Serif Pro';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 .monthly-headings>p{
     font-family: 'Source Sans Pro';
-font-size: 24px;
+font-size: 18px;
 font-weight: 300;
 color: rgba(105, 105, 105, 1);
 line-height: 35px;
-margin-bottom: 50px;
+margin-bottom: 25px;
 }
 
 .monthly-heading-container{
@@ -72,21 +145,26 @@ margin-bottom: 50px;
     padding-left: 121px;
 }
 
-button{
-    height: 52px;
-    width: 217px;
-    font-size: large;
+.monthly-btn{
+    height: 46px;
+    width: 150px;
+    
     background-color: rgba(16, 8, 0, 1);
     color: white;
     outline: none;
     border: none;
     padding-top: 1rem;
-    padding-bottom:1rem ;
+    padding-bottom:1rem;
+    cursor: pointer;
+    
 }
 
-button:hover{
-    background-color: transparent;
-    border: 2px solid #000;
-    color: #000;
+.monthly-btn:hover{
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+}
+
+.get-deal:hover{
+    transform: scale(1.05);
     transition: 200ms ease-in-out;
 }

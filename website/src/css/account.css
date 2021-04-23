@@ -1,10 +1,13 @@
 .create-account{
     padding-top: 85px;
     padding-bottom: 85px;
-    background-image: url("../images/Frame\ 40.png");
+    background-image: url("../images2/Frame\ 40.png");
+    background-position: center;
     display: flex;
     justify-content: center;
     color: whitesmoke;
+    position: relative;
+    z-index: 20;
 }
 .create-container{
  display: flex;

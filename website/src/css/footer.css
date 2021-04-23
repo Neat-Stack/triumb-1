@@ -12,12 +12,29 @@
     justify-content: space-between;
 }
 
-footer > p{
+.policy-div > p{
     color: white;
+    
     
 }
 
-.social-logo{
+
+.rule-link-ul{
+  
+    display: flex;
+   
+ 
+}
+.rules-link,.rules-link > a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 25px;
+}
+.rules-link,.rules-link > a:hover{
+   color: lightgray;
+}
+
+.social-logo>a{
    color: rgb(255, 255, 255);
    padding: 5px;
    background-color: rgb(37, 37, 37);
@@ -29,8 +46,13 @@ footer > p{
    margin-right: 10px;
    height: 17px;
     width: 17px;
+    text-decoration: none;
 }
 
 .social-logos{
     display: flex;
+}
+
+.rules-link{
+    margin-bottom: 20px;
 }

@@ -15,6 +15,9 @@ import Checkout from './components/Checkout';
 import Login from './components/Login';
 import {auth} from "./firebase"
 import {useStateValue} from './StateProvider'
+import Terms from './components/Terms';
+import Privacy from './components/Privacy';
+import Refund from './components/Refund';
 
 function App() {
   const[{user},dispatch] = useStateValue()
@@ -62,6 +65,7 @@ function App() {
           {/* contact us */}
           <span id="contactid"/>
           <Contact/>
+          
           {/* footer */}
           <Footer/>
         </div>
@@ -74,6 +78,15 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login/>
+        </Route>
+        <Route exact path="/tac">
+          <Terms/>
+        </Route>
+        <Route exact path="/privacy">
+          <Privacy/>
+        </Route>
+        <Route exact path="/refund">
+          <Refund/>
         </Route>
     </Router>
   );

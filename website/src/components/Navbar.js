@@ -61,17 +61,11 @@ function Navbar() {
         };
     }, [])
 
-
-   
-
-
     return (
         <div className={`navbar ${show && "nav_black"} `}>
 
         <div className='logo_div'>
-        <Link  to="/">
             <img height="50px" className='logo'src={logo} alt='img'/>
-            </Link>
         </div>
 
         <div className="hamburger" onClick={click} >
@@ -80,28 +74,24 @@ function Navbar() {
             <div className="line3"></div>
         </div>
         <ul className="nav-links" onClick={clicked}>
-            <li><Link to="#productid" className={show && "a-white"}></Link></li>
-            <li><Link to="#storyid"><a  className={show && "a-white"} href="">OUR STORY</a></Link></li>
-            <li><Link to="#contactid"><a  className={show && "a-white"}href="#contactid">CONTACT US</a></Link></li>
+            <li><a  className={show && "a-white"} href="#productid">PRODUCTS</a></li>
+            <li><a  className={show && "a-white"} href="#storyid">ABOUT US</a></li>
+            <li><a  className={show && "a-white"}href="#contactid">CONTACT US</a></li>
             <li><div className="a-white login-link" >
              <Link to={!user && "/login"}>
              <div onClick={handleAuthentication}className='header_option'>
-              <span className='line_two'>{user?'Logout':'Your Triumb'}</span>
+                <span className='line_one'>{user?user.email:<span/>}</span>
+                <span className='line_two'>{user?'Logout':'Your Triumb'}</span>
                 </div>
                </Link> 
             </div></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <Link to='/cart'>
+            
+            {/* <Link to='/cart'>
           <li className='cart-logo'>
-              <ShoppingCartIcon />
+              <ShoppingCartIcon/>
               {cart.length}
           </li>
-           </Link>
+           </Link> */}
         </ul>
     </div>
     )

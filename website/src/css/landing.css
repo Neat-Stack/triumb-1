@@ -1,53 +1,49 @@
 .landing-page{
     height: 100vh;
+    
     display: flex;
-    background-size: contain;
     align-items: center;
     flex-wrap: wrap;
    justify-content: space-between;
 position: relative;
+
+ 
    
 }
 .text-container{
-position: absolute;
-width: 273px;
-height: 140px;
-left: 583px;
-top: 299px;
+    padding: 30px;
+   
+    position: relative;
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .tagline{
-font-family: Source Serif Pro;
-font-style: normal;
-font-weight: 600;
-font-size: 56px;
-line-height: 70px;
-text-align: center;
-
-color: #FFFFFF;
-
+    font-family: 'Source Serif Pro';
+    font-size: 56px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 80px;
+    text-align: center;
+    
 }
 
 .explore-btn{
+    margin-top: 29px;
     height: 46px;
     width: 150px;
     background-color: rgba(16, 8, 0, 1);
+    outline: none;
     color: white;
-    box-shadow: none;
-    text-align: center;
-    position: relative;
-    left: 22%;
     border: none;
-    padding :20px 38px 20px 38px;
-    text-decoration: none;
-    font-family: "Source Sans Pro";
 }
 
 .explore-btn:hover{
-    /* transform: scale(1.1); */
-    transition: ease-in-out 0.4s;
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: ease-in-out 200ms;
 }
 
 .slideshow{
@@ -65,3 +61,20 @@ color: #FFFFFF;
 .text-container, .slideshow{
     position: absolute;
 }
+
+.explore-btn:hover{
+    /* transform: scale(1.1); */
+    transition: ease-in-out 0.4s;
+    color: #fff;
+   
+    border: 2px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1000px) {
+    .landing-page{
+        height: 50vh;
+    }
+    .text-container{
+        transform: scale(0.5);
+    }
+  }

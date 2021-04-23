@@ -1,10 +1,10 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import shiny1 from '../images/shiny1.jpg'
+import shiny1 from '../images2/shiny1.jpg'
 
-import shiny3 from '../images/shiny3.jpg'
-import shiny4 from '../images/shiny4.jpg'
+import shiny3 from '../images2/shiny3.jpg'
+import shiny4 from '../images2/shiny4.jpg'
 import '../css/slide.css'
 
 

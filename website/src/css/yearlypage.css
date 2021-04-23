@@ -1,8 +1,25 @@
+/* .yearly-page{
+    
+    background-color:#DFEAF4;
+    background-image: url('../images/shiny1.jpg');
+    background-size: 80rem;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-position: left;
+    position: relative;
+    z-index: 20;
+    
+}
+  
 .yearly-deals{
     position: relative;
     z-index: 1;
     background-color: #DFEAF4;
 }
+
 .shiny{
     position: relative;
     z-index: 2;
@@ -27,9 +44,6 @@
     font-family: 'Source Serif Pro';
     font-size: 48px;
     font-weight: 600;
-    text-align: left;
-    justify-content: left;
-    align-items: initial;
 }
 .car-img > img{
     height: 300px;
@@ -37,14 +51,11 @@
 
 .yearly-page{
     display: flex;
-    background-color: #DFEAF4;
+    
 }
 
 .yearly-deals{
-    position: relative;
-    z-index: 2;
-    transform: scale(0.8);
-    height: 375px;
+    height: 577px;
     width: 540px;
     background-color: white;
     padding: 40px;
@@ -84,14 +95,10 @@
     color: white;
     outline: none;
     border: none;
-    padding-top: 1rem;
-    padding-bottom:1rem ;
 }
 
 .get-deal:hover{
-    background-color: transparent;
-    border: 2px solid #000;
-    color: #000;
+    transform: scale(1.05);
     transition: 200ms ease-in-out;
 }
 
@@ -105,16 +112,112 @@
   }
 
 .price{
-animation: fadeIn 2s;
-transition: all 2s ease-in-out;
-font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro';
 font-size: 48px;
 font-weight: 600;
 color: rgba(16, 8, 0, 1);
 line-height: 60px;
+} */
+
+
+/* final */
+.yearly-page{
+    background-color: #DFEAF4;
+    background-image: url('../images/shiny1.jpg');
+    background-size: 80rem;
+    background-repeat: no-repeat;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-position: left;
+    
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+.yearly-deals>p{
+    font-size: 18px;
+    color: rgba(105, 105, 105, 1);
+    font-family: 'Source Sans Pro';
+   
+}
+
+.yearly-deals>h1{
+    font-family: 'Source Serif Pro';
+    font-size: 36px;
+    font-weight: 600;
+}
+.car-img > img{
+    height: 300px;
+}
+
+.yearly-page{
+    display: flex;
+    
+}
+
+.yearly-deals{
+    height: 373px;
+    width: 538px;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 85px;
+   
+}
+
+.names{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name{
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    height: 46px;
+    width: 150px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1) !important; 
+    background-color: grey;
+    border: none;
+}
+.name:hover{
+   background-color: black;
+}
+.get-deal{
+    height: 46px;
+    width: 150px;
+    
+    background-color: rgba(16, 8, 0, 1);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.get-deal:hover{
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .yearly-deals{
+        position: static;
+    }
+    .yearly-page{
+        justify-content: center;
+    }
   }
+
+.price{
+    font-family: 'Source Sans Pro';
+font-size: 36px;
+font-weight: 600;
+color: rgba(16, 8, 0, 1);
+line-height: 60px;
+transition: 200ms;
+}

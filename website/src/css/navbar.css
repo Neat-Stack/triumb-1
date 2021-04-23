@@ -1,28 +1,31 @@
 
 
 body{
-    font-family: Nexa;
     overflow-x: hidden;
+    font-family: Nexa;
 }
 .navbar{
-    padding: 0.4rem;
     height: 4rem;
     width: 100vw;
+    
+  
     display: flex;
+    
     z-index: 100;
     padding: 0;
-    font-family: "Nexa";
+    font-family: sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
     color: rgb(27, 27, 27);
-    position: fixed;
-    top: 0%;
-    transition: 200ms ease-in-out;
+  
+   position: fixed;
+  top: 0%;
+  transition: 200ms ease-in-out;
 }
 
 .nav_black{
-    background-color: rgba(0, 0, 0, 0.705);
-    color: rgb(233, 233, 233);
+    background-color: black;
+    color: rgb(41, 182, 147);
 }
 
 .a-white{
@@ -32,15 +35,12 @@ body{
 .logo{
    object-fit: contain;
    transform: scale(2);
-   padding-left: 0.2rem;
-   
   
 }
 .logo_div{
     display: flex;
     align-items: center;
-    padding-left: 2rem;
-   
+    margin-left: 20px;
 }
 
 /*Styling Links*/
@@ -48,47 +48,40 @@ body{
     display: flex;
     list-style: none; 
     width: 88vw;
-    margin-left: 8rem;
-    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    padding: 0 0.7vw;
+    width: 100%;
+    margin-left: 300px;
     align-items: center;
     text-transform: uppercase;
-    text-align: right;
+   
     
 }
-
-
 .nav-links li a{
-/* font-family: Source Sans Pro; */
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-padding: 0.5rem 1rem 0.5rem 1rem;
-text-transform: uppercase;
-text-decoration: none;
-color: #696969;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: rgb(122, 122, 122);
+    margin-right: 72px;
 }
 .nav-links li a:hover {
-    color: rgb(230, 230, 230);
+    color: #61DAFB;
 }
 .nav-links li {
-    margin: 28px;
     position: relative;
 }
-.nav-links li a::after {
+/* .nav-links li a::after {
     content: "";
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #c7c7c7;
+    background-color: #61DAFB;
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 3% 0 0 10%;
 }
 .nav-links li a:hover::after{
     width: 80%;
-}
-
+} */
 
 /*Styling Buttons*/
 .login-button{
@@ -109,8 +102,8 @@ color: #696969;
 }
 .join-button{
     color: #131418;
-    background-color: #c7c7c7;
-    border: 1.5px solid #c7c7c7;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
     border-radius: 2em;
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
@@ -211,10 +204,9 @@ color: #696969;
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-li .cart-logo{
-    list-style: none;
-    text-align: right;
-    margin-left: auto;
+.cart-logo{
+    display: flex;
+    align-items: center;
 }
 
 .login-link{
@@ -226,3 +218,8 @@ li .cart-logo{
    display: flex;
     flex-direction: column;
 }
+
+
+
+
+
